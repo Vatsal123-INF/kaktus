@@ -27,3 +27,6 @@ let mySprite = sprites.create(img`
     ...eeeee....eeeee...
     ...eeeee....eeeee...
     `, SpriteKind.Player)
+game.onUpdate(function () {
+    scene.cameraFollowSprite(mySprite)
+})
